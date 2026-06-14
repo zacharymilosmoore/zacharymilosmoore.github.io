@@ -28,7 +28,7 @@ cv %>%
     start=Start,
     end=End
   ) %>%
-  select(id, content, start, end, Category) %>%
+  select(id, content, start, end, Category)
  
-timevis()
+#timevis()
 ```

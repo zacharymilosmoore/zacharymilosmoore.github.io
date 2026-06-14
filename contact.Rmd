@@ -41,21 +41,6 @@ icon_style(fontawesome$brands$linkedin,scale=5,colour="blue")
 icon_style(fontawesome$brands$researchgate,scale=5)
 ```
 
-[Research Gate](https://www.researchgate.net/profile/Zachary-Moore-18)
-
-```{r echo = F}
-icon_style(simple_icons$fiverr,scale=5)
-```
-
-[fiverr](https://www.fiverr.com/zacharymmoore)
-
-```{r echo = F}
-icon_style(simple_icons$upwork,scale=5)
-```
-
-[UpWork](https://www.upwork.com/freelancers/~019740478890543483)
-:::
-
 ::: header
 Last Updated:
 
