@@ -53,7 +53,7 @@ ggplot(skills,aes(x=reorder(Skill,`Years of Professional Exposure`),y=`Years of 
   scale_y_continuous(position = "right", sec.axis = dup_axis()) +
   coord_flip() + theme_classic() + 
   xlab("") +
-  scale_fill_manual(values=c("Learning"="#d9d9d9","Intermediate"="#C2E7D9","Advanced"="#73C6B6","Expert"="#16A085","Instructor"="#0E6251")) +
+  scale_fill_manual(values=c("Learning"="#d9d9d9","Intermediate"="#B7DFA3","Advanced"="#86BD73","Expert"="#5F9A4A","Instructor"="#2F5F20")) +
   theme(
    strip.placement = "outside",
    strip.background = element_rect(fill = NA, color = NA),
