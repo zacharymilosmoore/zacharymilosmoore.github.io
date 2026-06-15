@@ -20,7 +20,7 @@ output: html_document
 
 # **Zachary M. Moore**
 
-I am an ecologist and data scientist specializing in biological conservation, ecological restoration, and data management. Currently, I am working to identify areas that are disproportionately important for biodiversity conservation in Canada through my [work on the Key Biodiversity Areas Project](https://kbacanada.org/) with [Wildlife Conservation Society Canada](https://www.wcs.org/). I also teach courses across several programs in environment and business at [Niagara College Canada](https://www.niagaracollege.ca/). I additionally take on data consulting work here or there for specific and interesting projects, so please get in touch if you'd like to work together. 
+I am an ecologist and data analyst specializing in biological conservation, ecological restoration, and data management. Currently, I am working to identify areas that are disproportionately important for biodiversity conservation in Canada through my [work on the Key Biodiversity Areas Project](https://kbacanada.org/) with [Wildlife Conservation Society Canada](https://www.wcs.org/). I also teach courses across several programs in environment and business at [Niagara College Canada](https://www.niagaracollege.ca/). I additionally take on data consulting work here or there for specific and interesting projects, so please get in touch if you'd like to work together. 
 
 ## My Specialities
 - Study Design, Implementation, and Reporting
