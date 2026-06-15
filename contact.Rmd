@@ -37,10 +37,6 @@ icon_style(fontawesome$brands$linkedin,scale=5,colour="blue")
 
 [LinkedIn](https://www.linkedin.com/in/zacharymilosmoore)
 
-```{r echo = F}
-icon_style(fontawesome$brands$researchgate,scale=5)
-```
-
 ::: header
 Last Updated:
 

@@ -15,32 +15,57 @@ output: html_document
 </style>
 
 <div class="row" style="padding-top: 30px;">
+</div>
 <div class="col-sm-6">
 
-# **Home**
+# **Zachary M. Moore**
 
-I am an environmental professional specializing in ecology, ecological restoration, and data analysis. Currently, I am working to identify areas that are disproportionately important for biodiversity conservation in Canada through my [work on the Key Biodiversity Areas Project](https://kbacanada.org/) with [Wildlife Conservation Society Canada](https://www.wcs.org/). I also volunteer with the [Society for Conservation Biology North America (SCB-NA)](https://scbnorthamerica.org/) and I teach courses in the Ecological Restoration and Environmental Technician programs at [Niagara College Canada](https://www.niagaracollege.ca/). I additionally take on data consulting work here or there for specific and interesting projects, so please get in touch if you'd like to work together. 
-
-
-
+I am an ecologist and data scientist specializing in biological conservation, ecological restoration, and data management. Currently, I am working to identify areas that are disproportionately important for biodiversity conservation in Canada through my [work on the Key Biodiversity Areas Project](https://kbacanada.org/) with [Wildlife Conservation Society Canada](https://www.wcs.org/). I also teach courses across several programs in environment and business at [Niagara College Canada](https://www.niagaracollege.ca/). I additionally take on data consulting work here or there for specific and interesting projects, so please get in touch if you'd like to work together. 
 
 ## My Specialities
-
-- Scientific Study Design, Implementation, and Reporting
+- Study Design, Implementation, and Reporting
 - Ecological Monitoring, Mapping, and Assessment
-- Ecological Restoration Planning, Implementation, and Assessment
+- Ecological Restoration Implementation and Assessment
 - Data Analysis Using R Statistical Programming and Geographic Information Systems (GIS)
-- Database Design Using Microsoft Excel, Access, SQL
+- Database Design 
 - Technical Reporting
 - Non-profit Governance and Administration
+- Post-secondary Education
 - Outdoor Education and Outreach
-
 
 </div>
 <div class="col-sm-6">
 
 ![](media/site_headshot.png)
 </a>
+</div>
+<div class="row" style="padding-top: 30px;">
+```{r, echo = FALSE, message=FALSE, fig.width = 10, fig.height = 10}
+library(tidyverse)
+library(readxl)
+
+skills<-na.omit(read_excel("cv_zmm.xlsx",sheet="Skills")[1:5]) %>%
+  mutate(`Self-identified Level`=factor(`Self-identified Level`,levels=c("Learning","Intermediate","Advanced","Expert","Instructor"))) 
+
+ggplot(skills,aes(x=reorder(Skill,`Years of Professional Exposure`),y=`Years of Professional Exposure`,fill=`Self-identified Level`))+
+  geom_bar(stat="identity",position="dodge")+
+  facet_wrap(~Category, ncol= 1, scales = "free_y", space = "free_y",strip.position = "left") +
+  scale_y_continuous(position = "right", sec.axis = dup_axis()) +
+  coord_flip() + theme_classic() + 
+  xlab("") +
+  scale_fill_manual(values=c("Learning"="#d9d9d9","Intermediate"="#C2E7D9","Advanced"="#73C6B6","Expert"="#16A085","Instructor"="#0E6251")) +
+  theme(
+   strip.placement = "outside",
+   strip.background = element_rect(fill = NA, color = NA),
+   legend.position = "top",
+   legend.direction = "horizontal"
+  )
+```
+</div>
+<div class="row" style="padding-left: 30px; padding-right: 30px; text-align: center;">
+
+<i>Some of my most prominent technical skills with the number of years since I started doing them professionally, color-coded by my self-identified proficiency. 'Instructor' indicates skills which I teach at the post-secondary level.</i>
+
 </div>
 <div class="header">
 
